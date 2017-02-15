@@ -15,6 +15,7 @@ import android.content.res.Resources;
 //import com.google.android.gms.common.api.GoogleApiClient;
 
 // https://habrahabr.ru/post/114580/
+//https://goo.gl/JjYzCg
 
 public class activity1 extends AppCompatActivity {
 
