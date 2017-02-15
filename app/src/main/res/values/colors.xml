@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a2e8</color>
+    <color name="colorPrimaryDark">#0090cf</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTextArea">#eee</color>
+    <color name="colorButtonBackground">#00a2e8</color>
+    <color name="colorButtonBackgroundPressed">#0090cf</color>
+    <color name="colorButtonClearBackground">#ffc000</color>
+    <color name="colorButtonClearBackgroundPressed">#e6ad00</color>
+    <color name="colorButtonDoneBackground">#86e600</color>
+    <color name="colorButtonDoneBackgroundPressed">#77cd00</color>
+    <color name="colorButtonColor">#fff</color>
+    <color name="colorActivityBackground">#b7e9ff</color>
+</resources>
