@@ -4,13 +4,12 @@
     android:id="@+id/activity_activity1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/colorActivityBackground"
     tools:context="ru.nbauer.app1.counter.activity1">
-
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"
+       android:paddingLeft="@dimen/activity_horizontal_margin"
+       android:paddingRight="@dimen/activity_horizontal_margin"
+       android:paddingTop="@dimen/activity_vertical_margin"-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,6 +21,30 @@
         android:layout_alignParentStart="true"
         android:textSize="36sp"
         android:textAlignment="center" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/middle_space" />
+
+    <Button
+        android:text="@string/button1"
+        android:tag="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:minHeight="70dip"
+        android:minWidth="70dip"
+        android:background="@drawable/btn"
+        android:textColor="@color/colorButtonColor"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
 
     <Button
         android:text="@string/button2"
@@ -78,14 +101,14 @@
         android:tag="5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:id="@+id/button5"
         android:minHeight="70dip"
         android:minWidth="70dip"
         android:background="@drawable/btn"
         android:textColor="@color/colorButtonColor"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_above="@+id/middle_space"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="@string/button6"
@@ -144,29 +167,13 @@
         android:id="@+id/button9"
         android:minHeight="70dip"
         android:minWidth="70dip"
-        android:layout_alignBaseline="@+id/button8"
-        android:layout_alignBottom="@+id/button8"
-        android:layout_alignLeft="@+id/button6"
-        android:layout_alignStart="@+id/button6"
-        android:background="@drawable/btn"
-        android:textColor="@color/colorButtonColor"
-        android:textSize="24sp" />
-
-    <Button
-        android:text="@string/button0"
-        android:tag="0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button0"
-        android:minHeight="70dip"
-        android:minWidth="70dip"
         android:background="@drawable/btn"
         android:textColor="@color/colorButtonColor"
         android:textSize="24sp"
-        android:layout_below="@+id/button8"
-        android:layout_alignLeft="@+id/button8"
-        android:layout_alignStart="@+id/button8"
-        android:layout_marginTop="20dip" />
+        android:layout_alignBaseline="@+id/button8"
+        android:layout_alignBottom="@+id/button8"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignStart="@+id/button6" />
 
     <Button
         android:text="@string/button_clear"
@@ -185,6 +192,22 @@
         android:layout_alignStart="@+id/button7" />
 
     <Button
+        android:text="@string/button0"
+        android:tag="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button0"
+        android:minHeight="70dip"
+        android:minWidth="70dip"
+        android:background="@drawable/btn"
+        android:textColor="@color/colorButtonColor"
+        android:textSize="24sp"
+        android:layout_below="@+id/button8"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8"
+        android:layout_marginTop="20dip" />
+
+    <Button
         android:text="@string/button_done"
         android:tag="done"
         android:layout_width="wrap_content"
@@ -199,23 +222,5 @@
         android:layout_alignBottom="@+id/button0"
         android:layout_alignLeft="@+id/button9"
         android:layout_alignStart="@+id/button9" />
-
-    <Button
-        android:text="@string/button1"
-        android:tag="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button1"
-        android:minHeight="70dip"
-        android:minWidth="70dip"
-        android:background="@drawable/btn"
-        android:textColor="@color/colorButtonColor"
-        android:textSize="24sp"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4"
-        android:textAllCaps="false"
-        />
 
 </RelativeLayout>
